@@ -1,0 +1,10 @@
+docker-boilerplate:
+  build: .
+  dockerfile: Dockerfile
+  #image: christroutner/something
+  container_name: docker-boilerplate
+  ports:
+    - "1111:1111"   # host:container
+  volumes:
+    - /home/trout/work/personal/docker-boilerplate/data:/data
+  restart: always
